@@ -1,0 +1,23 @@
+
+.bro{
+  letter-spacing: 2px;
+}
+.skill-tile {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #eef0f4;
+  padding: 24px 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-tile:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(58, 42, 143, 0.15);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  color: rgba(58, 42, 143, 0.85);
+  margin-bottom: 10px;
+}

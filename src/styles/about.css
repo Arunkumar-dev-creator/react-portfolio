@@ -1,0 +1,41 @@
+.about-alt {
+  background-color: whitesmoke;
+  font-size: 16px;
+  
+  
+}
+.bro1{
+  letter-spacing: 1px;
+}
+.story-card,
+.highlight-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #eef0f4;
+  /* box-shadow: 0 0px 0px rgba(0, 0, 0, 0.04); */
+  transition: box-shadow 0.4s ;
+}
+
+.highlight-card:hover,.story-card:hover {
+  box-shadow:1px 1px 10px gray;
+ 
+}
+
+.highlight-list li {
+  padding: 6px 0;
+  color: #333;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.stats h4 {
+  color: #5b3cc4;
+}
+
+.rg {
+  color: rgba(58, 42, 143, 0.85);
+}

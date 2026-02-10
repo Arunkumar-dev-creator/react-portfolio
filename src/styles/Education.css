@@ -1,0 +1,109 @@
+.education-atom-section {
+  background: #ffffff;
+  color: #222;
+}
+
+.section-title {
+  letter-spacing: 2px !important;
+  font-weight: 600 !important;
+  text-align: start;
+  font-size: 16px !important;
+}
+
+.section-subtitle {
+  color: #5b3fd1 !important;
+  font-size: 1rem;
+}
+
+.edu-atom-timeline {
+  position: relative;
+}
+
+.edu-atom-row {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.edu-left .edu-org {
+  font-weight: 600;
+  color: #999;
+}
+
+.edu-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.edu-center::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  bottom: -40px;
+  width: 2px;
+  background: #e0e0e0;
+}
+
+.edu-dot {
+  width: 12px;
+  height: 12px;
+  background: #5b3fd1;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.edu-right .edu-content {
+  background: #e9e8ed;
+  padding: 10px 10px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.edu-year {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #5b3fd1;
+  display: inline-block;
+  margin-bottom: 1px;
+}
+
+.edu-right h5 {
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+
+.edu-right p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .edu-atom-row {
+    text-align: center;
+  }
+
+  .edu-left {
+    order: 1;
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+
+  .edu-center {
+    order: 2;
+    margin-bottom: 10px;
+  }
+
+  .edu-right {
+    order: 3;
+  }
+
+  .edu-center::before {
+    top: -20px;
+    bottom: -20px;
+  }
+}

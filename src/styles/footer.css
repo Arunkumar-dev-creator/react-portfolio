@@ -1,0 +1,70 @@
+.footer-portfolio {
+  margin-top: 80px;
+}
+
+/* CTA Section */
+.footer-cta-new {
+  background: #1d1c20;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.footer-cta-new h3 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.cta-text-new {
+  color: #cbd5e1;
+  margin-top: 10px;
+  max-width: 560px;
+  font-size: 1.05rem;
+}
+
+/* CTA Button */
+.cta-btn-new {
+  background-color: #5b3fc4 !important;  /* Force override */
+  border: none !important;
+  color: #fff !important;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.cta-btn-new:hover {
+  background-color: #6d4ce0 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(91, 63, 196, 0.4);
+}
+
+
+/* Bottom Footer (ThemeWagon Style) */
+.footer-main {
+  background: #5b3fc4;
+  padding: 18px 0;
+  color: #fff;
+}
+
+.footer-main p {
+  font-size: 0.9rem;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 14px;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer-cta-new {
+    text-align: center;
+  }
+}

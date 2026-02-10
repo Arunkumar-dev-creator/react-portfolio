@@ -1,0 +1,109 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 80px 0;
+}
+.body{
+  margin: 0;
+}
+.hero-section {
+  padding-top: 15px !important;   /* 👈 hero-ku mela space remove */
+  padding-bottom: 100px;
+}
+.bro{
+  
+}
+/* ===== HERO SECTION ===== */
+.hero-section {
+  
+  background:
+    linear-gradient(
+      135deg,
+      rgba(92, 60, 196, 0.513),
+      rgba(59, 42, 143, 0.53)
+    ),
+    url("https://img.freepik.com/premium-photo/home-office-desk-laptop-mobile-note-book-pen-dark-blue-background-stylish-wor-generative-ai_874904-63224.jpg")
+      center/cover no-repeat fixed;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+   /* Navbar space */
+}
+
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(87, 64, 180, 0),
+    rgba(40, 28, 95, 0)
+  );
+  z-index: 1;
+}
+
+/* Optional glass blur effect */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+}
+
+
+/* Layout */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.5);
+  object-fit: cover;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 200;
+}
+
+.hero-subtitle {
+  opacity: 0.9;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.hero-actions .btn {
+  border-radius: 999px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .hero-avatar {
+    margin: 0 auto 20px;
+  }
+}

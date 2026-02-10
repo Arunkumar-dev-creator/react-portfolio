@@ -1,0 +1,117 @@
+/* Section Background */
+.cert-atom-section {
+  position: relative;
+  height: 500px;
+  background: whitesmoke;   /* Top white background */
+  color: #222;
+  padding: 120px 0 140px;
+  overflow: hidden;
+}
+
+/* Bottom left diagonal cut (Atom purple) */
+.cert-atom-section::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 50%;
+  height: 140px;
+  background: #5b3fd1;
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Bottom right diagonal cut (Atom purple) */
+.cert-atom-section::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  width: 50%;
+  height: 140px;
+  background: #5b3fd1;
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+}
+
+/* Keep content above shapes */
+.cert-atom-section > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Headings */
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #5b3fd1; /* Atom purple */
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Card */
+.cert-card {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 26px 28px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+.cert-year {
+  display: inline-block;
+  background: rgba(91, 63, 209, 0.1);
+  color: #5b3fd1;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cert-card h5 {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cert-org {
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.cert-desc {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .cert-card {
+    padding: 20px;
+  }
+
+  .cert-atom-section {
+    padding: 70px 0 120px;
+  }
+
+  .cert-atom-section::before,
+  .cert-atom-section::after {
+    height: 90px;
+  }
+}

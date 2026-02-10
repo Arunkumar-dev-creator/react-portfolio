@@ -1,0 +1,84 @@
+.rg{
+  color: #5b3fd1 !important; 
+}
+
+.projects-alt {
+  background-color: whitesmoke;
+}
+
+.projects-kicker {
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: start;
+  color: #94a3b8;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg,#5b3fd1,#5b3fd1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card */
+.project-bg-card {
+  height: 350px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.project-bg-card:hover {
+  /* transform: translateY(-10px) scale(1.02); */
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+/* Content Overlay */
+.project-card-content {
+  position: absolute;
+  inset: 0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+backdrop-filter: none; /* No blur */
+  transition: transform 0.4s ease;
+}
+
+.project-bg-card:hover .project-card-content {
+  transform: scale(1.05); /* Front la varra effect */
+}
+
+/* Tech Pills */
+.tech-pill {
+ 
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff !important;
+  font-weight: 500;
+}
+
+/* Live Button */
+.live-btn {
+  background: transparent;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+  transition: all 0.3s ease;
+}
+
+.live-btn:hover {
+  background: #22c55e !important;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-bg-card {
+    height: auto;
+    min-height: 380px;
+  }
+}

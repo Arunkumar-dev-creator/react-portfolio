@@ -1,0 +1,70 @@
+/* ===== HERO NAVBAR (ThemeWagon Style) ===== */
+.hero-navbar {
+  background: transparent;
+  padding: 16px 0;
+  position: static;          /* 👈 scroll pannum pothu top-la iruka */
+  top: 0; 
+  left:0;  
+  width: 100%;
+  z-index: 999;
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+/* Logo */
+.hero-logo {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+         /* 👈 small professional logo */
+  color: #ffffff !important;
+  text-transform:capitalize;
+  font-size:27px !important;
+ 
+}
+
+/* Nav Links */
+.hero-nav .nav-link {
+  font-family: "Poppins", sans-serif;
+  font-size:smaller;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #e5e7eb !important;
+  margin-left: 18px;
+  position: relative;
+}
+
+/* Underline hover effect */
+.hero-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #facc15; /* Yellow accent */
+  transition: width 0.3s ease;
+}
+
+.hero-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===== Mobile Menu ===== */
+@media (max-width: 991px) {
+  .hero-navbar {
+    background: rgba(60, 42, 140, 0.95);  /* Scroll/expand time visible bg */
+    backdrop-filter: blur(8px);
+  }
+
+  .hero-nav {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+
+  .hero-nav .nav-link {
+    margin-left: 0;
+    padding: 8px 0;
+  }
+}
