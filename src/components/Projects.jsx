@@ -58,10 +58,10 @@ export default function ProjectsAlt() {
               transition={{ duration: 0.5 }}
             >
               
-              <h3 className="fw-bold mb-3 gradient-text">
+              <h3 className="fw-bold mb-4 rg ">
                 PROFESSIONAL PROJECT EXPERIENCE
               </h3>
-              <p className="text-muted h6 mt-4">
+              <p className="text-muted h6 mt-3">
                 Frontend projects using React, JavaScript, and responsive UI.
               </p>
             </motion.div>
