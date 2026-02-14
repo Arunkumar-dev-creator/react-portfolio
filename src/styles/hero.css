@@ -74,10 +74,12 @@ section {
 
 .hero-avatar {
   width: 200px;
-  height: 200px;
+  height: 260px;
   border-radius: 50%;
   border: 6px solid rgba(255, 255, 255, 0.5);
-  object-fit: cover;
+  object-fit:cover;
+  overflow: hidden;
+  
 }
 
 .hero-title {

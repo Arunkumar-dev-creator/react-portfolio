@@ -42,12 +42,10 @@ export default function Hero() {
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
           <motion.img
-            src="/images/i2.jpg"
+            src="/images/profile 3.png"
             alt="Arun"
             className="hero-avatar"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+           
           />
 
           <div>
